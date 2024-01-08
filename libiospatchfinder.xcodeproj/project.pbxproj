@@ -7,8 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F8CB1982B4C4C630044B0C8 /* libiospatchfinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1972B4C4C630044B0C8 /* libiospatchfinder.m */; };
-		6F8CB1992B4C4C630044B0C8 /* libiospatchfinder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6F8CB1962B4C4C630044B0C8 /* libiospatchfinder.h */; };
+		6F8CB2302B4C4CC70044B0C8 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1A12B4C4CC60044B0C8 /* Utils.cpp */; };
+		6F8CB2312B4C4CC70044B0C8 /* exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1A22B4C4CC60044B0C8 /* exception.cpp */; };
+		6F8CB2322B4C4CC70044B0C8 /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1A32B4C4CC60044B0C8 /* Manager.cpp */; };
+		6F8CB2332B4C4CC70044B0C8 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1A42B4C4CC60044B0C8 /* Event.cpp */; };
+		6F8CB2342B4C4CC70044B0C8 /* Mem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1A52B4C4CC60044B0C8 /* Mem.cpp */; };
+		6F8CB2352B4C4CC70044B0C8 /* GuardAccess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1A62B4C4CC60044B0C8 /* GuardAccess.cpp */; };
+		6F8CB2362B4C4CC70044B0C8 /* ASN1DERElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1A82B4C4CC60044B0C8 /* ASN1DERElement.cpp */; };
+		6F8CB2372B4C4CC70044B0C8 /* lzssdec.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1A92B4C4CC60044B0C8 /* lzssdec.c */; };
+		6F8CB2382B4C4CC70044B0C8 /* img4tool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1AA2B4C4CC60044B0C8 /* img4tool.cpp */; };
+		6F8CB2392B4C4CC70044B0C8 /* arm64_encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1AD2B4C4CC60044B0C8 /* arm64_encode.cpp */; };
+		6F8CB23A2B4C4CC70044B0C8 /* arm32_arm_encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1AE2B4C4CC60044B0C8 /* arm32_arm_encode.cpp */; };
+		6F8CB23B2B4C4CC70044B0C8 /* arm32_thumb_encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1AF2B4C4CC60044B0C8 /* arm32_thumb_encode.cpp */; };
+		6F8CB23C2B4C4CC70044B0C8 /* arm32_thumb_decode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1B02B4C4CC60044B0C8 /* arm32_thumb_decode.cpp */; };
+		6F8CB23D2B4C4CC70044B0C8 /* arm32_arm_decode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1B12B4C4CC60044B0C8 /* arm32_arm_decode.cpp */; };
+		6F8CB23E2B4C4CC70044B0C8 /* arm64_decode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1B22B4C4CC60044B0C8 /* arm64_decode.cpp */; };
+		6F8CB23F2B4C4CC70044B0C8 /* vmem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1B32B4C4CC60044B0C8 /* vmem.cpp */; };
+		6F8CB2402B4C4CC70044B0C8 /* patchfinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1DE2B4C4CC60044B0C8 /* patchfinder.cpp */; };
+		6F8CB2412B4C4CC70044B0C8 /* patchfinder32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1E02B4C4CC60044B0C8 /* patchfinder32.cpp */; };
+		6F8CB2422B4C4CC70044B0C8 /* ibootpatchfinder64_iOS7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1E22B4C4CC60044B0C8 /* ibootpatchfinder64_iOS7.cpp */; };
+		6F8CB2432B4C4CC70044B0C8 /* ibootpatchfinder64_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1E32B4C4CC60044B0C8 /* ibootpatchfinder64_base.cpp */; };
+		6F8CB2452B4C4CC70044B0C8 /* ibootpatchfinder64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1E62B4C4CC60044B0C8 /* ibootpatchfinder64.cpp */; };
+		6F8CB2462B4C4CC70044B0C8 /* ibootpatchfinder32_iOS13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1F52B4C4CC70044B0C8 /* ibootpatchfinder32_iOS13.cpp */; };
+		6F8CB2472B4C4CC70044B0C8 /* ibootpatchfinder32_iOS12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1F62B4C4CC70044B0C8 /* ibootpatchfinder32_iOS12.cpp */; };
+		6F8CB2482B4C4CC70044B0C8 /* ibootpatchfinder64_iOS10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1F72B4C4CC70044B0C8 /* ibootpatchfinder64_iOS10.cpp */; };
+		6F8CB2492B4C4CC70044B0C8 /* ibootpatchfinder32_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1F82B4C4CC70044B0C8 /* ibootpatchfinder32_base.cpp */; };
+		6F8CB24A2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1F92B4C4CC70044B0C8 /* ibootpatchfinder64_iOS12.cpp */; };
+		6F8CB24B2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1FA2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS5.cpp */; };
+		6F8CB24C2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1FB2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS4.cpp */; };
+		6F8CB24D2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1FC2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS11.cpp */; };
+		6F8CB24E2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1FD2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS13.cpp */; };
+		6F8CB24F2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1FE2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS17.cpp */; };
+		6F8CB2502B4C4CC70044B0C8 /* ibootpatchfinder64_iOS16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB1FF2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS16.cpp */; };
+		6F8CB2512B4C4CC70044B0C8 /* ibootpatchfinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2012B4C4CC70044B0C8 /* ibootpatchfinder.cpp */; };
+		6F8CB2522B4C4CC70044B0C8 /* ibootpatchfinder64_iOS14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2022B4C4CC70044B0C8 /* ibootpatchfinder64_iOS14.cpp */; };
+		6F8CB2532B4C4CC70044B0C8 /* ibootpatchfinder64_iOS15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2032B4C4CC70044B0C8 /* ibootpatchfinder64_iOS15.cpp */; };
+		6F8CB2542B4C4CC70044B0C8 /* ibootpatchfinder32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2042B4C4CC70044B0C8 /* ibootpatchfinder32.cpp */; };
+		6F8CB2552B4C4CC70044B0C8 /* ibootpatchfinder64_iOS9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2072B4C4CC70044B0C8 /* ibootpatchfinder64_iOS9.cpp */; };
+		6F8CB2562B4C4CC70044B0C8 /* patch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2082B4C4CC70044B0C8 /* patch.cpp */; };
+		6F8CB2572B4C4CC70044B0C8 /* machopatchfinder32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2092B4C4CC70044B0C8 /* machopatchfinder32.cpp */; };
+		6F8CB2582B4C4CC70044B0C8 /* patchfinder64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB20B2B4C4CC70044B0C8 /* patchfinder64.cpp */; };
+		6F8CB2592B4C4CC70044B0C8 /* kernelpatchfinder32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2152B4C4CC70044B0C8 /* kernelpatchfinder32.cpp */; };
+		6F8CB25A2B4C4CC70044B0C8 /* kernelpatchfinder32_iOS9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2162B4C4CC70044B0C8 /* kernelpatchfinder32_iOS9.cpp */; };
+		6F8CB25B2B4C4CC70044B0C8 /* kernelpatchfinder32_iOS8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2192B4C4CC70044B0C8 /* kernelpatchfinder32_iOS8.cpp */; };
+		6F8CB25C2B4C4CC70044B0C8 /* kernelpatchfinder64_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB21A2B4C4CC70044B0C8 /* kernelpatchfinder64_base.cpp */; };
+		6F8CB25D2B4C4CC70044B0C8 /* kernelpatchfinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB21B2B4C4CC70044B0C8 /* kernelpatchfinder.cpp */; };
+		6F8CB25E2B4C4CC70044B0C8 /* kernelpatchfinder64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2202B4C4CC70044B0C8 /* kernelpatchfinder64.cpp */; };
+		6F8CB25F2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2212B4C4CC70044B0C8 /* kernelpatchfinder64_iOS9.cpp */; };
+		6F8CB2602B4C4CC70044B0C8 /* kernelpatchfinder32_iOS5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2222B4C4CC70044B0C8 /* kernelpatchfinder32_iOS5.cpp */; };
+		6F8CB2612B4C4CC70044B0C8 /* kernelpatchfinder64_iOS12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2232B4C4CC70044B0C8 /* kernelpatchfinder64_iOS12.cpp */; };
+		6F8CB2622B4C4CC70044B0C8 /* kernelpatchfinder32_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2242B4C4CC70044B0C8 /* kernelpatchfinder32_base.cpp */; };
+		6F8CB2632B4C4CC70044B0C8 /* kernelpatchfinder64_iOS13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2252B4C4CC70044B0C8 /* kernelpatchfinder64_iOS13.cpp */; };
+		6F8CB2642B4C4CC70044B0C8 /* kernelpatchfinder32_iOS11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2262B4C4CC70044B0C8 /* kernelpatchfinder32_iOS11.cpp */; };
+		6F8CB2652B4C4CC70044B0C8 /* kernelpatchfinder32_iOS6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2272B4C4CC70044B0C8 /* kernelpatchfinder32_iOS6.cpp */; };
+		6F8CB2662B4C4CC70044B0C8 /* kernelpatchfinder64_iOS15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB2282B4C4CC70044B0C8 /* kernelpatchfinder64_iOS15.cpp */; };
+		6F8CB2672B4C4CC70044B0C8 /* kernelpatchfinder64_iOS17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB22A2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS17.cpp */; };
+		6F8CB2682B4C4CC70044B0C8 /* kernelpatchfinder64_iOS16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB22B2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS16.cpp */; };
+		6F8CB2692B4C4CC70044B0C8 /* machopatchfinder64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB22D2B4C4CC70044B0C8 /* machopatchfinder64.cpp */; };
+		6F8CB26A2B4C4CC70044B0C8 /* StableHash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB22E2B4C4CC70044B0C8 /* StableHash.cpp */; };
+		6F8CB26B2B4C4CC70044B0C8 /* patchfinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB22F2B4C4CC70044B0C8 /* patchfinder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +75,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				6F8CB1992B4C4C630044B0C8 /* libiospatchfinder.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +82,132 @@
 
 /* Begin PBXFileReference section */
 		6F8CB1932B4C4C630044B0C8 /* liblibiospatchfinder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibiospatchfinder.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F8CB1962B4C4C630044B0C8 /* libiospatchfinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libiospatchfinder.h; sourceTree = "<group>"; };
-		6F8CB1972B4C4C630044B0C8 /* libiospatchfinder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libiospatchfinder.m; sourceTree = "<group>"; };
+		6F8CB1A12B4C4CC60044B0C8 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		6F8CB1A22B4C4CC60044B0C8 /* exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exception.cpp; sourceTree = "<group>"; };
+		6F8CB1A32B4C4CC60044B0C8 /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Manager.cpp; sourceTree = "<group>"; };
+		6F8CB1A42B4C4CC60044B0C8 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
+		6F8CB1A52B4C4CC60044B0C8 /* Mem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mem.cpp; sourceTree = "<group>"; };
+		6F8CB1A62B4C4CC60044B0C8 /* GuardAccess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuardAccess.cpp; sourceTree = "<group>"; };
+		6F8CB1A82B4C4CC60044B0C8 /* ASN1DERElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ASN1DERElement.cpp; sourceTree = "<group>"; };
+		6F8CB1A92B4C4CC60044B0C8 /* lzssdec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lzssdec.c; sourceTree = "<group>"; };
+		6F8CB1AA2B4C4CC60044B0C8 /* img4tool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = img4tool.cpp; sourceTree = "<group>"; };
+		6F8CB1AB2B4C4CC60044B0C8 /* lzssdec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzssdec.h; sourceTree = "<group>"; };
+		6F8CB1AD2B4C4CC60044B0C8 /* arm64_encode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arm64_encode.cpp; sourceTree = "<group>"; };
+		6F8CB1AE2B4C4CC60044B0C8 /* arm32_arm_encode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arm32_arm_encode.cpp; sourceTree = "<group>"; };
+		6F8CB1AF2B4C4CC60044B0C8 /* arm32_thumb_encode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arm32_thumb_encode.cpp; sourceTree = "<group>"; };
+		6F8CB1B02B4C4CC60044B0C8 /* arm32_thumb_decode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arm32_thumb_decode.cpp; sourceTree = "<group>"; };
+		6F8CB1B12B4C4CC60044B0C8 /* arm32_arm_decode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arm32_arm_decode.cpp; sourceTree = "<group>"; };
+		6F8CB1B22B4C4CC60044B0C8 /* arm64_decode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arm64_decode.cpp; sourceTree = "<group>"; };
+		6F8CB1B32B4C4CC60044B0C8 /* vmem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vmem.cpp; sourceTree = "<group>"; };
+		6F8CB1B62B4C4CC60044B0C8 /* ByteOrder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ByteOrder.hpp; sourceTree = "<group>"; };
+		6F8CB1B72B4C4CC60044B0C8 /* Event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
+		6F8CB1B82B4C4CC60044B0C8 /* ByteOrder.hpp.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ByteOrder.hpp.in; sourceTree = "<group>"; };
+		6F8CB1B92B4C4CC60044B0C8 /* Mem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mem.hpp; sourceTree = "<group>"; };
+		6F8CB1BA2B4C4CC60044B0C8 /* GuardAccess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GuardAccess.hpp; sourceTree = "<group>"; };
+		6F8CB1BB2B4C4CC60044B0C8 /* DeliveryEvent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DeliveryEvent.hpp; sourceTree = "<group>"; };
+		6F8CB1BC2B4C4CC60044B0C8 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		6F8CB1BD2B4C4CC60044B0C8 /* Manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Manager.hpp; sourceTree = "<group>"; };
+		6F8CB1BE2B4C4CC60044B0C8 /* Utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
+		6F8CB1BF2B4C4CC60044B0C8 /* exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exception.hpp; sourceTree = "<group>"; };
+		6F8CB1C12B4C4CC60044B0C8 /* img4tool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = img4tool.hpp; sourceTree = "<group>"; };
+		6F8CB1C22B4C4CC60044B0C8 /* ASN1DERElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ASN1DERElement.hpp; sourceTree = "<group>"; };
+		6F8CB1C42B4C4CC60044B0C8 /* arm32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = arm32.hpp; sourceTree = "<group>"; };
+		6F8CB1C52B4C4CC60044B0C8 /* insn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = insn.hpp; sourceTree = "<group>"; };
+		6F8CB1C62B4C4CC60044B0C8 /* vmem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vmem.hpp; sourceTree = "<group>"; };
+		6F8CB1C82B4C4CC60044B0C8 /* arm32_arm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = arm32_arm.hpp; sourceTree = "<group>"; };
+		6F8CB1C92B4C4CC60044B0C8 /* arm32_thumb.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = arm32_thumb.hpp; sourceTree = "<group>"; };
+		6F8CB1CA2B4C4CC60044B0C8 /* arm32_insn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = arm32_insn.hpp; sourceTree = "<group>"; };
+		6F8CB1CB2B4C4CC60044B0C8 /* INSNexception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = INSNexception.hpp; sourceTree = "<group>"; };
+		6F8CB1CC2B4C4CC60044B0C8 /* arm64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = arm64.hpp; sourceTree = "<group>"; };
+		6F8CB1CE2B4C4CC60044B0C8 /* OFexception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OFexception.hpp; sourceTree = "<group>"; };
+		6F8CB1CF2B4C4CC60044B0C8 /* machopatchfinder64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = machopatchfinder64.hpp; sourceTree = "<group>"; };
+		6F8CB1D12B4C4CC60044B0C8 /* ibootpatchfinder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder.hpp; sourceTree = "<group>"; };
+		6F8CB1D22B4C4CC60044B0C8 /* ibootpatchfinder32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder32.hpp; sourceTree = "<group>"; };
+		6F8CB1D32B4C4CC60044B0C8 /* ibootpatchfinder64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64.hpp; sourceTree = "<group>"; };
+		6F8CB1D42B4C4CC60044B0C8 /* patchfinder64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = patchfinder64.hpp; sourceTree = "<group>"; };
+		6F8CB1D52B4C4CC60044B0C8 /* patch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = patch.hpp; sourceTree = "<group>"; };
+		6F8CB1D62B4C4CC60044B0C8 /* machopatchfinder32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = machopatchfinder32.hpp; sourceTree = "<group>"; };
+		6F8CB1D72B4C4CC60044B0C8 /* patchfinder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = patchfinder.hpp; sourceTree = "<group>"; };
+		6F8CB1D92B4C4CC60044B0C8 /* kernelpatchfinder64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder64.hpp; sourceTree = "<group>"; };
+		6F8CB1DA2B4C4CC60044B0C8 /* kernelpatchfinder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder.hpp; sourceTree = "<group>"; };
+		6F8CB1DB2B4C4CC60044B0C8 /* kernelpatchfinder32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder32.hpp; sourceTree = "<group>"; };
+		6F8CB1DC2B4C4CC60044B0C8 /* patchfinder32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = patchfinder32.hpp; sourceTree = "<group>"; };
+		6F8CB1DE2B4C4CC60044B0C8 /* patchfinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = patchfinder.cpp; sourceTree = "<group>"; };
+		6F8CB1DF2B4C4CC60044B0C8 /* StableHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StableHash.h; sourceTree = "<group>"; };
+		6F8CB1E02B4C4CC60044B0C8 /* patchfinder32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = patchfinder32.cpp; sourceTree = "<group>"; };
+		6F8CB1E22B4C4CC60044B0C8 /* ibootpatchfinder64_iOS7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_iOS7.cpp; sourceTree = "<group>"; };
+		6F8CB1E32B4C4CC60044B0C8 /* ibootpatchfinder64_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_base.cpp; sourceTree = "<group>"; };
+		6F8CB1E42B4C4CC60044B0C8 /* ibootpatchfinder64_iOS9.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_iOS9.hpp; sourceTree = "<group>"; };
+		6F8CB1E62B4C4CC60044B0C8 /* ibootpatchfinder64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64.cpp; sourceTree = "<group>"; };
+		6F8CB1E72B4C4CC60044B0C8 /* ibootpatchfinder32_iOS13.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder32_iOS13.hpp; sourceTree = "<group>"; };
+		6F8CB1E82B4C4CC60044B0C8 /* ibootpatchfinder64_iOS10.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_iOS10.hpp; sourceTree = "<group>"; };
+		6F8CB1E92B4C4CC60044B0C8 /* ibootpatchfinder32_iOS12.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder32_iOS12.hpp; sourceTree = "<group>"; };
+		6F8CB1EA2B4C4CC60044B0C8 /* ibootpatchfinder32_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder32_base.hpp; sourceTree = "<group>"; };
+		6F8CB1EB2B4C4CC60044B0C8 /* ibootpatchfinder64_iOS12.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_iOS12.hpp; sourceTree = "<group>"; };
+		6F8CB1EC2B4C4CC60044B0C8 /* ibootpatchfinder32_iOS5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder32_iOS5.hpp; sourceTree = "<group>"; };
+		6F8CB1ED2B4C4CC60044B0C8 /* ibootpatchfinder32_iOS4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder32_iOS4.hpp; sourceTree = "<group>"; };
+		6F8CB1EE2B4C4CC60044B0C8 /* ibootpatchfinder64_iOS13.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_iOS13.hpp; sourceTree = "<group>"; };
+		6F8CB1EF2B4C4CC60044B0C8 /* ibootpatchfinder32_iOS11.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder32_iOS11.hpp; sourceTree = "<group>"; };
+		6F8CB1F02B4C4CC60044B0C8 /* ibootpatchfinder64_iOS17.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_iOS17.hpp; sourceTree = "<group>"; };
+		6F8CB1F12B4C4CC60044B0C8 /* ibootpatchfinder64_iOS16.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_iOS16.hpp; sourceTree = "<group>"; };
+		6F8CB1F22B4C4CC60044B0C8 /* ibootpatchfinder64_iOS14.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_iOS14.hpp; sourceTree = "<group>"; };
+		6F8CB1F32B4C4CC60044B0C8 /* ibootpatchfinder64_iOS15.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_iOS15.hpp; sourceTree = "<group>"; };
+		6F8CB1F52B4C4CC70044B0C8 /* ibootpatchfinder32_iOS13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder32_iOS13.cpp; sourceTree = "<group>"; };
+		6F8CB1F62B4C4CC70044B0C8 /* ibootpatchfinder32_iOS12.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder32_iOS12.cpp; sourceTree = "<group>"; };
+		6F8CB1F72B4C4CC70044B0C8 /* ibootpatchfinder64_iOS10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_iOS10.cpp; sourceTree = "<group>"; };
+		6F8CB1F82B4C4CC70044B0C8 /* ibootpatchfinder32_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder32_base.cpp; sourceTree = "<group>"; };
+		6F8CB1F92B4C4CC70044B0C8 /* ibootpatchfinder64_iOS12.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_iOS12.cpp; sourceTree = "<group>"; };
+		6F8CB1FA2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder32_iOS5.cpp; sourceTree = "<group>"; };
+		6F8CB1FB2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder32_iOS4.cpp; sourceTree = "<group>"; };
+		6F8CB1FC2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder32_iOS11.cpp; sourceTree = "<group>"; };
+		6F8CB1FD2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_iOS13.cpp; sourceTree = "<group>"; };
+		6F8CB1FE2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS17.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_iOS17.cpp; sourceTree = "<group>"; };
+		6F8CB1FF2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_iOS16.cpp; sourceTree = "<group>"; };
+		6F8CB2012B4C4CC70044B0C8 /* ibootpatchfinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder.cpp; sourceTree = "<group>"; };
+		6F8CB2022B4C4CC70044B0C8 /* ibootpatchfinder64_iOS14.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_iOS14.cpp; sourceTree = "<group>"; };
+		6F8CB2032B4C4CC70044B0C8 /* ibootpatchfinder64_iOS15.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_iOS15.cpp; sourceTree = "<group>"; };
+		6F8CB2042B4C4CC70044B0C8 /* ibootpatchfinder32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder32.cpp; sourceTree = "<group>"; };
+		6F8CB2052B4C4CC70044B0C8 /* ibootpatchfinder64_iOS7.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_iOS7.hpp; sourceTree = "<group>"; };
+		6F8CB2062B4C4CC70044B0C8 /* ibootpatchfinder64_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ibootpatchfinder64_base.hpp; sourceTree = "<group>"; };
+		6F8CB2072B4C4CC70044B0C8 /* ibootpatchfinder64_iOS9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ibootpatchfinder64_iOS9.cpp; sourceTree = "<group>"; };
+		6F8CB2082B4C4CC70044B0C8 /* patch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = patch.cpp; sourceTree = "<group>"; };
+		6F8CB2092B4C4CC70044B0C8 /* machopatchfinder32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = machopatchfinder32.cpp; sourceTree = "<group>"; };
+		6F8CB20A2B4C4CC70044B0C8 /* all32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = all32.h; sourceTree = "<group>"; };
+		6F8CB20B2B4C4CC70044B0C8 /* patchfinder64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = patchfinder64.cpp; sourceTree = "<group>"; };
+		6F8CB20C2B4C4CC70044B0C8 /* all64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = all64.h; sourceTree = "<group>"; };
+		6F8CB20E2B4C4CC70044B0C8 /* kernelpatchfinder32_iOS5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder32_iOS5.hpp; sourceTree = "<group>"; };
+		6F8CB20F2B4C4CC70044B0C8 /* kernelpatchfinder32_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder32_base.hpp; sourceTree = "<group>"; };
+		6F8CB2102B4C4CC70044B0C8 /* kernelpatchfinder64_iOS12.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder64_iOS12.hpp; sourceTree = "<group>"; };
+		6F8CB2112B4C4CC70044B0C8 /* kernelpatchfinder32_iOS11.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder32_iOS11.hpp; sourceTree = "<group>"; };
+		6F8CB2122B4C4CC70044B0C8 /* kernelpatchfinder64_iOS13.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder64_iOS13.hpp; sourceTree = "<group>"; };
+		6F8CB2132B4C4CC70044B0C8 /* kernelpatchfinder32_iOS6.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder32_iOS6.hpp; sourceTree = "<group>"; };
+		6F8CB2142B4C4CC70044B0C8 /* kernelpatchfinder64_iOS15.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder64_iOS15.hpp; sourceTree = "<group>"; };
+		6F8CB2152B4C4CC70044B0C8 /* kernelpatchfinder32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder32.cpp; sourceTree = "<group>"; };
+		6F8CB2162B4C4CC70044B0C8 /* kernelpatchfinder32_iOS9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder32_iOS9.cpp; sourceTree = "<group>"; };
+		6F8CB2172B4C4CC70044B0C8 /* kernelpatchfinder64_iOS17.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder64_iOS17.hpp; sourceTree = "<group>"; };
+		6F8CB2182B4C4CC70044B0C8 /* kernelpatchfinder64_iOS16.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder64_iOS16.hpp; sourceTree = "<group>"; };
+		6F8CB2192B4C4CC70044B0C8 /* kernelpatchfinder32_iOS8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder32_iOS8.cpp; sourceTree = "<group>"; };
+		6F8CB21A2B4C4CC70044B0C8 /* kernelpatchfinder64_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder64_base.cpp; sourceTree = "<group>"; };
+		6F8CB21B2B4C4CC70044B0C8 /* kernelpatchfinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder.cpp; sourceTree = "<group>"; };
+		6F8CB21C2B4C4CC70044B0C8 /* sbops64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sbops64.h; sourceTree = "<group>"; };
+		6F8CB21D2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS9.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder64_iOS9.hpp; sourceTree = "<group>"; };
+		6F8CB21E2B4C4CC70044B0C8 /* kernelpatchfinder64_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder64_base.hpp; sourceTree = "<group>"; };
+		6F8CB2202B4C4CC70044B0C8 /* kernelpatchfinder64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder64.cpp; sourceTree = "<group>"; };
+		6F8CB2212B4C4CC70044B0C8 /* kernelpatchfinder64_iOS9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder64_iOS9.cpp; sourceTree = "<group>"; };
+		6F8CB2222B4C4CC70044B0C8 /* kernelpatchfinder32_iOS5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder32_iOS5.cpp; sourceTree = "<group>"; };
+		6F8CB2232B4C4CC70044B0C8 /* kernelpatchfinder64_iOS12.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder64_iOS12.cpp; sourceTree = "<group>"; };
+		6F8CB2242B4C4CC70044B0C8 /* kernelpatchfinder32_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder32_base.cpp; sourceTree = "<group>"; };
+		6F8CB2252B4C4CC70044B0C8 /* kernelpatchfinder64_iOS13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder64_iOS13.cpp; sourceTree = "<group>"; };
+		6F8CB2262B4C4CC70044B0C8 /* kernelpatchfinder32_iOS11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder32_iOS11.cpp; sourceTree = "<group>"; };
+		6F8CB2272B4C4CC70044B0C8 /* kernelpatchfinder32_iOS6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder32_iOS6.cpp; sourceTree = "<group>"; };
+		6F8CB2282B4C4CC70044B0C8 /* kernelpatchfinder64_iOS15.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder64_iOS15.cpp; sourceTree = "<group>"; };
+		6F8CB2292B4C4CC70044B0C8 /* kernelpatchfinder32_iOS9.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder32_iOS9.hpp; sourceTree = "<group>"; };
+		6F8CB22A2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS17.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder64_iOS17.cpp; sourceTree = "<group>"; };
+		6F8CB22B2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernelpatchfinder64_iOS16.cpp; sourceTree = "<group>"; };
+		6F8CB22C2B4C4CC70044B0C8 /* kernelpatchfinder32_iOS8.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kernelpatchfinder32_iOS8.hpp; sourceTree = "<group>"; };
+		6F8CB22D2B4C4CC70044B0C8 /* machopatchfinder64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = machopatchfinder64.cpp; sourceTree = "<group>"; };
+		6F8CB22E2B4C4CC70044B0C8 /* StableHash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StableHash.cpp; sourceTree = "<group>"; };
+		6F8CB22F2B4C4CC70044B0C8 /* patchfinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = patchfinder.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +240,254 @@
 		6F8CB1952B4C4C630044B0C8 /* libiospatchfinder */ = {
 			isa = PBXGroup;
 			children = (
-				6F8CB1962B4C4C630044B0C8 /* libiospatchfinder.h */,
-				6F8CB1972B4C4C630044B0C8 /* libiospatchfinder.m */,
+				6F8CB19F2B4C4CC60044B0C8 /* deps */,
+				6F8CB22F2B4C4CC70044B0C8 /* patchfinder.cpp */,
 			);
 			path = libiospatchfinder;
+			sourceTree = "<group>";
+		};
+		6F8CB19F2B4C4CC60044B0C8 /* deps */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1A02B4C4CC60044B0C8 /* libgeneral */,
+				6F8CB1A72B4C4CC60044B0C8 /* img4tool */,
+				6F8CB1AC2B4C4CC60044B0C8 /* libinsn */,
+				6F8CB1B42B4C4CC60044B0C8 /* include */,
+				6F8CB1DD2B4C4CC60044B0C8 /* libpatchfinder */,
+			);
+			path = deps;
+			sourceTree = "<group>";
+		};
+		6F8CB1A02B4C4CC60044B0C8 /* libgeneral */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1A12B4C4CC60044B0C8 /* Utils.cpp */,
+				6F8CB1A22B4C4CC60044B0C8 /* exception.cpp */,
+				6F8CB1A32B4C4CC60044B0C8 /* Manager.cpp */,
+				6F8CB1A42B4C4CC60044B0C8 /* Event.cpp */,
+				6F8CB1A52B4C4CC60044B0C8 /* Mem.cpp */,
+				6F8CB1A62B4C4CC60044B0C8 /* GuardAccess.cpp */,
+			);
+			path = libgeneral;
+			sourceTree = "<group>";
+		};
+		6F8CB1A72B4C4CC60044B0C8 /* img4tool */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1A82B4C4CC60044B0C8 /* ASN1DERElement.cpp */,
+				6F8CB1A92B4C4CC60044B0C8 /* lzssdec.c */,
+				6F8CB1AA2B4C4CC60044B0C8 /* img4tool.cpp */,
+				6F8CB1AB2B4C4CC60044B0C8 /* lzssdec.h */,
+			);
+			path = img4tool;
+			sourceTree = "<group>";
+		};
+		6F8CB1AC2B4C4CC60044B0C8 /* libinsn */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1AD2B4C4CC60044B0C8 /* arm64_encode.cpp */,
+				6F8CB1AE2B4C4CC60044B0C8 /* arm32_arm_encode.cpp */,
+				6F8CB1AF2B4C4CC60044B0C8 /* arm32_thumb_encode.cpp */,
+				6F8CB1B02B4C4CC60044B0C8 /* arm32_thumb_decode.cpp */,
+				6F8CB1B12B4C4CC60044B0C8 /* arm32_arm_decode.cpp */,
+				6F8CB1B22B4C4CC60044B0C8 /* arm64_decode.cpp */,
+				6F8CB1B32B4C4CC60044B0C8 /* vmem.cpp */,
+			);
+			path = libinsn;
+			sourceTree = "<group>";
+		};
+		6F8CB1B42B4C4CC60044B0C8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1B52B4C4CC60044B0C8 /* libgeneral */,
+				6F8CB1C02B4C4CC60044B0C8 /* img4tool */,
+				6F8CB1C32B4C4CC60044B0C8 /* libinsn */,
+				6F8CB1CD2B4C4CC60044B0C8 /* libpatchfinder */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6F8CB1B52B4C4CC60044B0C8 /* libgeneral */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1B62B4C4CC60044B0C8 /* ByteOrder.hpp */,
+				6F8CB1B72B4C4CC60044B0C8 /* Event.hpp */,
+				6F8CB1B82B4C4CC60044B0C8 /* ByteOrder.hpp.in */,
+				6F8CB1B92B4C4CC60044B0C8 /* Mem.hpp */,
+				6F8CB1BA2B4C4CC60044B0C8 /* GuardAccess.hpp */,
+				6F8CB1BB2B4C4CC60044B0C8 /* DeliveryEvent.hpp */,
+				6F8CB1BC2B4C4CC60044B0C8 /* macros.h */,
+				6F8CB1BD2B4C4CC60044B0C8 /* Manager.hpp */,
+				6F8CB1BE2B4C4CC60044B0C8 /* Utils.hpp */,
+				6F8CB1BF2B4C4CC60044B0C8 /* exception.hpp */,
+			);
+			path = libgeneral;
+			sourceTree = "<group>";
+		};
+		6F8CB1C02B4C4CC60044B0C8 /* img4tool */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1C12B4C4CC60044B0C8 /* img4tool.hpp */,
+				6F8CB1C22B4C4CC60044B0C8 /* ASN1DERElement.hpp */,
+			);
+			path = img4tool;
+			sourceTree = "<group>";
+		};
+		6F8CB1C32B4C4CC60044B0C8 /* libinsn */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1C42B4C4CC60044B0C8 /* arm32.hpp */,
+				6F8CB1C52B4C4CC60044B0C8 /* insn.hpp */,
+				6F8CB1C62B4C4CC60044B0C8 /* vmem.hpp */,
+				6F8CB1C72B4C4CC60044B0C8 /* arm32 */,
+				6F8CB1CB2B4C4CC60044B0C8 /* INSNexception.hpp */,
+				6F8CB1CC2B4C4CC60044B0C8 /* arm64.hpp */,
+			);
+			path = libinsn;
+			sourceTree = "<group>";
+		};
+		6F8CB1C72B4C4CC60044B0C8 /* arm32 */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1C82B4C4CC60044B0C8 /* arm32_arm.hpp */,
+				6F8CB1C92B4C4CC60044B0C8 /* arm32_thumb.hpp */,
+				6F8CB1CA2B4C4CC60044B0C8 /* arm32_insn.hpp */,
+			);
+			path = arm32;
+			sourceTree = "<group>";
+		};
+		6F8CB1CD2B4C4CC60044B0C8 /* libpatchfinder */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1CE2B4C4CC60044B0C8 /* OFexception.hpp */,
+				6F8CB1CF2B4C4CC60044B0C8 /* machopatchfinder64.hpp */,
+				6F8CB1D02B4C4CC60044B0C8 /* ibootpatchfinder */,
+				6F8CB1D42B4C4CC60044B0C8 /* patchfinder64.hpp */,
+				6F8CB1D52B4C4CC60044B0C8 /* patch.hpp */,
+				6F8CB1D62B4C4CC60044B0C8 /* machopatchfinder32.hpp */,
+				6F8CB1D72B4C4CC60044B0C8 /* patchfinder.hpp */,
+				6F8CB1D82B4C4CC60044B0C8 /* kernelpatchfinder */,
+				6F8CB1DC2B4C4CC60044B0C8 /* patchfinder32.hpp */,
+			);
+			path = libpatchfinder;
+			sourceTree = "<group>";
+		};
+		6F8CB1D02B4C4CC60044B0C8 /* ibootpatchfinder */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1D12B4C4CC60044B0C8 /* ibootpatchfinder.hpp */,
+				6F8CB1D22B4C4CC60044B0C8 /* ibootpatchfinder32.hpp */,
+				6F8CB1D32B4C4CC60044B0C8 /* ibootpatchfinder64.hpp */,
+			);
+			path = ibootpatchfinder;
+			sourceTree = "<group>";
+		};
+		6F8CB1D82B4C4CC60044B0C8 /* kernelpatchfinder */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1D92B4C4CC60044B0C8 /* kernelpatchfinder64.hpp */,
+				6F8CB1DA2B4C4CC60044B0C8 /* kernelpatchfinder.hpp */,
+				6F8CB1DB2B4C4CC60044B0C8 /* kernelpatchfinder32.hpp */,
+			);
+			path = kernelpatchfinder;
+			sourceTree = "<group>";
+		};
+		6F8CB1DD2B4C4CC60044B0C8 /* libpatchfinder */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1DE2B4C4CC60044B0C8 /* patchfinder.cpp */,
+				6F8CB1DF2B4C4CC60044B0C8 /* StableHash.h */,
+				6F8CB1E02B4C4CC60044B0C8 /* patchfinder32.cpp */,
+				6F8CB1E12B4C4CC60044B0C8 /* ibootpatchfinder */,
+				6F8CB2082B4C4CC70044B0C8 /* patch.cpp */,
+				6F8CB2092B4C4CC70044B0C8 /* machopatchfinder32.cpp */,
+				6F8CB20A2B4C4CC70044B0C8 /* all32.h */,
+				6F8CB20B2B4C4CC70044B0C8 /* patchfinder64.cpp */,
+				6F8CB20C2B4C4CC70044B0C8 /* all64.h */,
+				6F8CB20D2B4C4CC70044B0C8 /* kernelpatchfinder */,
+				6F8CB22D2B4C4CC70044B0C8 /* machopatchfinder64.cpp */,
+				6F8CB22E2B4C4CC70044B0C8 /* StableHash.cpp */,
+			);
+			path = libpatchfinder;
+			sourceTree = "<group>";
+		};
+		6F8CB1E12B4C4CC60044B0C8 /* ibootpatchfinder */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB1E22B4C4CC60044B0C8 /* ibootpatchfinder64_iOS7.cpp */,
+				6F8CB1E32B4C4CC60044B0C8 /* ibootpatchfinder64_base.cpp */,
+				6F8CB1E42B4C4CC60044B0C8 /* ibootpatchfinder64_iOS9.hpp */,
+				6F8CB1E62B4C4CC60044B0C8 /* ibootpatchfinder64.cpp */,
+				6F8CB1E72B4C4CC60044B0C8 /* ibootpatchfinder32_iOS13.hpp */,
+				6F8CB1E82B4C4CC60044B0C8 /* ibootpatchfinder64_iOS10.hpp */,
+				6F8CB1E92B4C4CC60044B0C8 /* ibootpatchfinder32_iOS12.hpp */,
+				6F8CB1EA2B4C4CC60044B0C8 /* ibootpatchfinder32_base.hpp */,
+				6F8CB1EB2B4C4CC60044B0C8 /* ibootpatchfinder64_iOS12.hpp */,
+				6F8CB1EC2B4C4CC60044B0C8 /* ibootpatchfinder32_iOS5.hpp */,
+				6F8CB1ED2B4C4CC60044B0C8 /* ibootpatchfinder32_iOS4.hpp */,
+				6F8CB1EE2B4C4CC60044B0C8 /* ibootpatchfinder64_iOS13.hpp */,
+				6F8CB1EF2B4C4CC60044B0C8 /* ibootpatchfinder32_iOS11.hpp */,
+				6F8CB1F02B4C4CC60044B0C8 /* ibootpatchfinder64_iOS17.hpp */,
+				6F8CB1F12B4C4CC60044B0C8 /* ibootpatchfinder64_iOS16.hpp */,
+				6F8CB1F22B4C4CC60044B0C8 /* ibootpatchfinder64_iOS14.hpp */,
+				6F8CB1F32B4C4CC60044B0C8 /* ibootpatchfinder64_iOS15.hpp */,
+				6F8CB1F52B4C4CC70044B0C8 /* ibootpatchfinder32_iOS13.cpp */,
+				6F8CB1F62B4C4CC70044B0C8 /* ibootpatchfinder32_iOS12.cpp */,
+				6F8CB1F72B4C4CC70044B0C8 /* ibootpatchfinder64_iOS10.cpp */,
+				6F8CB1F82B4C4CC70044B0C8 /* ibootpatchfinder32_base.cpp */,
+				6F8CB1F92B4C4CC70044B0C8 /* ibootpatchfinder64_iOS12.cpp */,
+				6F8CB1FA2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS5.cpp */,
+				6F8CB1FB2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS4.cpp */,
+				6F8CB1FC2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS11.cpp */,
+				6F8CB1FD2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS13.cpp */,
+				6F8CB1FE2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS17.cpp */,
+				6F8CB1FF2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS16.cpp */,
+				6F8CB2012B4C4CC70044B0C8 /* ibootpatchfinder.cpp */,
+				6F8CB2022B4C4CC70044B0C8 /* ibootpatchfinder64_iOS14.cpp */,
+				6F8CB2032B4C4CC70044B0C8 /* ibootpatchfinder64_iOS15.cpp */,
+				6F8CB2042B4C4CC70044B0C8 /* ibootpatchfinder32.cpp */,
+				6F8CB2052B4C4CC70044B0C8 /* ibootpatchfinder64_iOS7.hpp */,
+				6F8CB2062B4C4CC70044B0C8 /* ibootpatchfinder64_base.hpp */,
+				6F8CB2072B4C4CC70044B0C8 /* ibootpatchfinder64_iOS9.cpp */,
+			);
+			path = ibootpatchfinder;
+			sourceTree = "<group>";
+		};
+		6F8CB20D2B4C4CC70044B0C8 /* kernelpatchfinder */ = {
+			isa = PBXGroup;
+			children = (
+				6F8CB20E2B4C4CC70044B0C8 /* kernelpatchfinder32_iOS5.hpp */,
+				6F8CB20F2B4C4CC70044B0C8 /* kernelpatchfinder32_base.hpp */,
+				6F8CB2102B4C4CC70044B0C8 /* kernelpatchfinder64_iOS12.hpp */,
+				6F8CB2112B4C4CC70044B0C8 /* kernelpatchfinder32_iOS11.hpp */,
+				6F8CB2122B4C4CC70044B0C8 /* kernelpatchfinder64_iOS13.hpp */,
+				6F8CB2132B4C4CC70044B0C8 /* kernelpatchfinder32_iOS6.hpp */,
+				6F8CB2142B4C4CC70044B0C8 /* kernelpatchfinder64_iOS15.hpp */,
+				6F8CB2152B4C4CC70044B0C8 /* kernelpatchfinder32.cpp */,
+				6F8CB2162B4C4CC70044B0C8 /* kernelpatchfinder32_iOS9.cpp */,
+				6F8CB2172B4C4CC70044B0C8 /* kernelpatchfinder64_iOS17.hpp */,
+				6F8CB2182B4C4CC70044B0C8 /* kernelpatchfinder64_iOS16.hpp */,
+				6F8CB2192B4C4CC70044B0C8 /* kernelpatchfinder32_iOS8.cpp */,
+				6F8CB21A2B4C4CC70044B0C8 /* kernelpatchfinder64_base.cpp */,
+				6F8CB21B2B4C4CC70044B0C8 /* kernelpatchfinder.cpp */,
+				6F8CB21C2B4C4CC70044B0C8 /* sbops64.h */,
+				6F8CB21D2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS9.hpp */,
+				6F8CB21E2B4C4CC70044B0C8 /* kernelpatchfinder64_base.hpp */,
+				6F8CB2202B4C4CC70044B0C8 /* kernelpatchfinder64.cpp */,
+				6F8CB2212B4C4CC70044B0C8 /* kernelpatchfinder64_iOS9.cpp */,
+				6F8CB2222B4C4CC70044B0C8 /* kernelpatchfinder32_iOS5.cpp */,
+				6F8CB2232B4C4CC70044B0C8 /* kernelpatchfinder64_iOS12.cpp */,
+				6F8CB2242B4C4CC70044B0C8 /* kernelpatchfinder32_base.cpp */,
+				6F8CB2252B4C4CC70044B0C8 /* kernelpatchfinder64_iOS13.cpp */,
+				6F8CB2262B4C4CC70044B0C8 /* kernelpatchfinder32_iOS11.cpp */,
+				6F8CB2272B4C4CC70044B0C8 /* kernelpatchfinder32_iOS6.cpp */,
+				6F8CB2282B4C4CC70044B0C8 /* kernelpatchfinder64_iOS15.cpp */,
+				6F8CB2292B4C4CC70044B0C8 /* kernelpatchfinder32_iOS9.hpp */,
+				6F8CB22A2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS17.cpp */,
+				6F8CB22B2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS16.cpp */,
+				6F8CB22C2B4C4CC70044B0C8 /* kernelpatchfinder32_iOS8.hpp */,
+			);
+			path = kernelpatchfinder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +547,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F8CB1982B4C4C630044B0C8 /* libiospatchfinder.m in Sources */,
+				6F8CB25C2B4C4CC70044B0C8 /* kernelpatchfinder64_base.cpp in Sources */,
+				6F8CB2392B4C4CC70044B0C8 /* arm64_encode.cpp in Sources */,
+				6F8CB24B2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS5.cpp in Sources */,
+				6F8CB2652B4C4CC70044B0C8 /* kernelpatchfinder32_iOS6.cpp in Sources */,
+				6F8CB26B2B4C4CC70044B0C8 /* patchfinder.cpp in Sources */,
+				6F8CB2552B4C4CC70044B0C8 /* ibootpatchfinder64_iOS9.cpp in Sources */,
+				6F8CB2512B4C4CC70044B0C8 /* ibootpatchfinder.cpp in Sources */,
+				6F8CB23A2B4C4CC70044B0C8 /* arm32_arm_encode.cpp in Sources */,
+				6F8CB2582B4C4CC70044B0C8 /* patchfinder64.cpp in Sources */,
+				6F8CB2592B4C4CC70044B0C8 /* kernelpatchfinder32.cpp in Sources */,
+				6F8CB24A2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS12.cpp in Sources */,
+				6F8CB2602B4C4CC70044B0C8 /* kernelpatchfinder32_iOS5.cpp in Sources */,
+				6F8CB2422B4C4CC70044B0C8 /* ibootpatchfinder64_iOS7.cpp in Sources */,
+				6F8CB23C2B4C4CC70044B0C8 /* arm32_thumb_decode.cpp in Sources */,
+				6F8CB2562B4C4CC70044B0C8 /* patch.cpp in Sources */,
+				6F8CB2462B4C4CC70044B0C8 /* ibootpatchfinder32_iOS13.cpp in Sources */,
+				6F8CB2332B4C4CC70044B0C8 /* Event.cpp in Sources */,
+				6F8CB25E2B4C4CC70044B0C8 /* kernelpatchfinder64.cpp in Sources */,
+				6F8CB2502B4C4CC70044B0C8 /* ibootpatchfinder64_iOS16.cpp in Sources */,
+				6F8CB2402B4C4CC70044B0C8 /* patchfinder.cpp in Sources */,
+				6F8CB2342B4C4CC70044B0C8 /* Mem.cpp in Sources */,
+				6F8CB23B2B4C4CC70044B0C8 /* arm32_thumb_encode.cpp in Sources */,
+				6F8CB2522B4C4CC70044B0C8 /* ibootpatchfinder64_iOS14.cpp in Sources */,
+				6F8CB25D2B4C4CC70044B0C8 /* kernelpatchfinder.cpp in Sources */,
+				6F8CB25A2B4C4CC70044B0C8 /* kernelpatchfinder32_iOS9.cpp in Sources */,
+				6F8CB24C2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS4.cpp in Sources */,
+				6F8CB25B2B4C4CC70044B0C8 /* kernelpatchfinder32_iOS8.cpp in Sources */,
+				6F8CB2542B4C4CC70044B0C8 /* ibootpatchfinder32.cpp in Sources */,
+				6F8CB23E2B4C4CC70044B0C8 /* arm64_decode.cpp in Sources */,
+				6F8CB26A2B4C4CC70044B0C8 /* StableHash.cpp in Sources */,
+				6F8CB24F2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS17.cpp in Sources */,
+				6F8CB2642B4C4CC70044B0C8 /* kernelpatchfinder32_iOS11.cpp in Sources */,
+				6F8CB2692B4C4CC70044B0C8 /* machopatchfinder64.cpp in Sources */,
+				6F8CB2662B4C4CC70044B0C8 /* kernelpatchfinder64_iOS15.cpp in Sources */,
+				6F8CB2382B4C4CC70044B0C8 /* img4tool.cpp in Sources */,
+				6F8CB2412B4C4CC70044B0C8 /* patchfinder32.cpp in Sources */,
+				6F8CB2532B4C4CC70044B0C8 /* ibootpatchfinder64_iOS15.cpp in Sources */,
+				6F8CB2482B4C4CC70044B0C8 /* ibootpatchfinder64_iOS10.cpp in Sources */,
+				6F8CB2372B4C4CC70044B0C8 /* lzssdec.c in Sources */,
+				6F8CB23D2B4C4CC70044B0C8 /* arm32_arm_decode.cpp in Sources */,
+				6F8CB2432B4C4CC70044B0C8 /* ibootpatchfinder64_base.cpp in Sources */,
+				6F8CB25F2B4C4CC70044B0C8 /* kernelpatchfinder64_iOS9.cpp in Sources */,
+				6F8CB2572B4C4CC70044B0C8 /* machopatchfinder32.cpp in Sources */,
+				6F8CB2302B4C4CC70044B0C8 /* Utils.cpp in Sources */,
+				6F8CB2362B4C4CC70044B0C8 /* ASN1DERElement.cpp in Sources */,
+				6F8CB2672B4C4CC70044B0C8 /* kernelpatchfinder64_iOS17.cpp in Sources */,
+				6F8CB2622B4C4CC70044B0C8 /* kernelpatchfinder32_base.cpp in Sources */,
+				6F8CB2352B4C4CC70044B0C8 /* GuardAccess.cpp in Sources */,
+				6F8CB2682B4C4CC70044B0C8 /* kernelpatchfinder64_iOS16.cpp in Sources */,
+				6F8CB2492B4C4CC70044B0C8 /* ibootpatchfinder32_base.cpp in Sources */,
+				6F8CB2632B4C4CC70044B0C8 /* kernelpatchfinder64_iOS13.cpp in Sources */,
+				6F8CB2452B4C4CC70044B0C8 /* ibootpatchfinder64.cpp in Sources */,
+				6F8CB2472B4C4CC70044B0C8 /* ibootpatchfinder32_iOS12.cpp in Sources */,
+				6F8CB2322B4C4CC70044B0C8 /* Manager.cpp in Sources */,
+				6F8CB23F2B4C4CC70044B0C8 /* vmem.cpp in Sources */,
+				6F8CB2312B4C4CC70044B0C8 /* exception.cpp in Sources */,
+				6F8CB24D2B4C4CC70044B0C8 /* ibootpatchfinder32_iOS11.cpp in Sources */,
+				6F8CB2612B4C4CC70044B0C8 /* kernelpatchfinder64_iOS12.cpp in Sources */,
+				6F8CB24E2B4C4CC70044B0C8 /* ibootpatchfinder64_iOS13.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +727,21 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M485NQ89DK;
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libiospatchfinder/deps/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_CFLAGS = (
+					"-DHAVE_MEMMEM",
+					"-DHAVE_IMG4TOOL",
+					"-DHAVE_LIBCOMPRESSION",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++17",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lcompression",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -257,7 +753,21 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M485NQ89DK;
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libiospatchfinder/deps/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_CFLAGS = (
+					"-DHAVE_MEMMEM",
+					"-DHAVE_IMG4TOOL",
+					"-DHAVE_LIBCOMPRESSION",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++17",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lcompression",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
